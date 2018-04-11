@@ -10,5 +10,5 @@ products = soup.find_all('div', {'class': 'productDetails'})
 
 for product in products:
     productName = soup.find('span', {'class': 'productTitle floatLeft'})
-    productPrice = soup.find('span', {'class': 'price regularPrice'}
-       print (productName + productPrice)
+    productPrice = soup.find('span', {'class': 'price regularPrice'})
+    print (productName.text + productPrice.text)
